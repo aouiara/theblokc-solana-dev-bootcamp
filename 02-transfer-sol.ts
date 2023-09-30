@@ -1,7 +1,7 @@
 import * as Web3 from '@solana/web3.js'
 import base58 from 'bs58'
 const connection = new Web3.Connection(Web3.clusterApiUrl('devnet'))
-const PRIVATE_KEY = '<PRIVATE_KEY>'
+const PRIVATE_KEY = '2qgDnxyit1dsnLMdc7Cpn6okvstNryEbib4YMmVz2mBf2mFyh7b38yJ2ahixBaWWwg4KTyXAVsp33CfS3sU9nGfJ'
 async function main() {
     const signer = Web3.Keypair.fromSecretKey(base58.decode(PRIVATE_KEY))
     const transaction = new Web3.Transaction()
