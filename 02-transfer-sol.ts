@@ -8,7 +8,7 @@ async function main() {
     const sendSolTransaction = Web3.SystemProgram.transfer({
         fromPubkey: new Web3.PublicKey('92UqzKy29rQaUG27ZoQt7cU8XNkpscnRkj9cn7b6FzgQ'),
         toPubkey: new Web3.PublicKey('CiiQbH743h7hks5g12aWoxWxrFrfawKwiBmu51RhYG8S'),
-        lamports: 0.1 * Web3.LAMPORTS_PER_SOL,
+        lamports: 0.5 * Web3.LAMPORTS_PER_SOL,
     });
     transaction.add(sendSolTransaction)
     const txHash = await Web3.sendAndConfirmTransaction(
@@ -16,6 +16,6 @@ async function main() {
         transaction,
         [signer]
     )
-    console.log('txHash', txHash)
+    console.log('txHash / txSignature', txHash)
 }
 main()
