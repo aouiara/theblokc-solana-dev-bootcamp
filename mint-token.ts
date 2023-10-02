@@ -14,8 +14,8 @@ const main = async () => {
     const decoded = base58.decode(process.env.PRIVATE_KEY!);
     const keyPair = Web3.Keypair.fromSecretKey(decoded)
 
-    const mintedToken = new Web3.PublicKey('CTmUEKvLioUoaV5ykMsajb3EFRq2Rosq856KXkhScqnv')
-    const tokenAccount = new Web3.PublicKey('6GH2Nb3nayHCNBvkLaYYx5cQzaMn5vS8YdUjNjSzekCy')
+    const mintedToken = new Web3.PublicKey('BnBABgcHtxonhnJYHoKqXn73dR2u3Vzm2u8JC17E5NNo')
+    const tokenAccount = new Web3.PublicKey('74JDZRsve6Rq1FCp6MuEB9LTagqyAEXdZ2q6ZfZdwUU4')
 
     const mintedTokens = await token.mintTo(
         connection, 
@@ -23,7 +23,7 @@ const main = async () => {
         mintedToken, 
         tokenAccount, 
         keyPair.publicKey, 
-        Web3.LAMPORTS_PER_SOL * 1000000000
+        Web3.LAMPORTS_PER_SOL * 250
     )
 
     console.log("minted tokens", mintedTokens)
