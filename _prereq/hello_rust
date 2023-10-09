@@ -1,1 +1,16 @@
+RUST FAMILIARIZATION
 
+- Rust project initialization
+  cargo init <project name>
+
+- Open project in compiler
+  code <project name> /
+
+- Compile first before running
+  cargo build // every code changes
+
+- Run the project
+  cargo run
+
+- Creating a mutable variable (mut)
+  means the variable value is changeable
