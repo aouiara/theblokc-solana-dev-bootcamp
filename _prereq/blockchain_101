@@ -1,1 +1,23 @@
+HOW BLOCKCHAIN WORKS
 
+* A transaction is needed to be requested
+* A block is then created from the transaction
+* All node in the network receives the block
+* The nodes validate the transaction
+  - where mining happens
+  - they find solutions to the puzzle
+  - validation happens
+  - problem solving
+* Validation is needed for nodes to receive a reward for the proof of work
+* Block is added to the existing blockchain
+  - this process repeats
+* Transaction complete
+
+
+- BLOCKCHAIN IS IMUTABLE (cannot edit blocks)
+
+- Chaining happens when the second block carries the hash of the previous block (simply just like the chain)
+
+- Changes in the previous block is REJECTED since the current block carries the previous (unchanged) hash of the previous block therefore, changes are evitable.
+
+- Uses gas as transaction fees
