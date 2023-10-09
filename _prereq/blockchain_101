@@ -20,4 +20,4 @@ HOW BLOCKCHAIN WORKS
 
 - Changes in the previous block is REJECTED since the current block carries the previous (unchanged) hash of the previous block therefore, changes are evitable.
 
-- Uses gas as transaction fees
+- Uses gas as transaction FEES
