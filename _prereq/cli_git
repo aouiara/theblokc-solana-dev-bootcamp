@@ -1,1 +1,43 @@
+CLI & GIT
 
+* make a new directory
+  - mkdir <directory name>
+
+* open a directory
+  - cd <directory name>
+  - cd .. // go back one directory
+  - cd ../../.. // go back three directories
+
+* open the directory in IDE
+  - code .
+
+* list of all contents in the directory
+  - ls
+
+* add git branch
+  - git branch <branch name>
+  - git branch -a // all branches
+
+* git status of branches and changes needed
+  - git status
+
+* log of all commits
+  - git log
+
+* commit
+  - git commit -m "text"
+  - git commit . // commit all
+
+* add changes
+  - git add <file name>
+  - git add . // add all
+
+* switch branches
+  - git checkout <branch name>
+
+* delete branch unmerged
+  - git branch -D <branch name>
+  - git branch -d <branch name> // merged commits
+
+* create new branch and switch to it
+   git checkout -b <branch name>
